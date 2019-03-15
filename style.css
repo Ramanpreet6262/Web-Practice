@@ -6,7 +6,7 @@ h1 {
 
 body {
     background-image: url(Images/background-2426328_1920.jpg);
-    background-size: contain;
+    background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
 }
 
