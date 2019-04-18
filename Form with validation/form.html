@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Voting Eligibility Form</title>
+        <link rel = "stylesheet" type = "text/css" href = "style.css"/>
+    </head>
+    <body>
+        <h1><b>Voting Eligibility Form</b></h1>
+        <div class="form">
+            <form name="thisform" onsubmit="return (validate(thisform));">
+                Name<span>*</span> <br>
+                <input type="text" name="Name" placeholder="Name" required><br>
+                Age<span>*</span>  <br>
+                <input type="text" name="age" placeholder="18" required> <br>
+                Contact No<span>*</span> <br>
+                <input type="text" name="Contact No" placeholder="9929658766" required><br>
+                Email<span>*</span> <br>
+                <input type="email" name="email" placeholder="abc@gmail.com" required><br>
+                Nationality <span>*</span><br>
+                <select name="Nationality" required>
+                    <option value="Indian" selected>Indian</option>
+                    <option value="migrant">Migrant</option>
+                    <option value="NRI">NRI</option>
+                    <option value="Other">Other</option>
+                </select><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        
+        <script>
+        function validate(thisform) {
+            var agee = thisform.age.value;
+            var countryy = thisform.Nationality.value;
+            if(!isNaN(agee) && agee >= 18 && countryy=="Indian") {
+                alert("Eligible for voting");
+            }
+            else{
+                alert("Not Eligible to Vote");
+            }
+        }
+        </script>
+    </body>
+</html>
