@@ -5,6 +5,7 @@ h1 {
 }
 
 body {
+    /* css for background image*/
     background-image: url(Images/ballot-black-and-white-black-and-white-1550337.jpg);
     background-size: cover;
     font-family: Arial, sans-serif;
